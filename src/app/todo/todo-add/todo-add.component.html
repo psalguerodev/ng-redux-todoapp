@@ -1,2 +1,8 @@
-<input id="toggle-all" class="toggle-all" type="checkbox">
-<label for="toggle-all">Mark all as complete</label>
+<header class="header">
+  <h1>todos</h1>
+  <input  class="new-todo"
+          placeholder="What needs to be done?"
+          [formControl]="txtInput"
+          (keyup.enter)="addTodo()"
+          autofocus>
+</header>
